@@ -1,6 +1,6 @@
 :root {
   --clr-primary: #ffffff;
-  --clr-secondary: #1e0424;
+  --clr-secondary: #5c10a4;
   --clr-accent: #ff5300;
   --clr-accent-2: #9600ff;
   --clr-catg-1: #ff908c;
@@ -46,45 +46,6 @@ a {
   text-decoration: none !important;
 }
 
-/*------------------------------------------------------------------
-Project:  MagNews
-Version:  
-Last change:  
-Assigned to:  Le Xuan Bach
-Primary use:  Company
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
-
-* body
-  + Header / header
-  + Page Content / .page-content .name-page
-        + Section Layouts / section .name-section
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color 01:  
-# Primary Color 02:   
-# Primary Color 03:  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
--------------------------------------------------------------------*/
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-/*------------------------------------------------------------------
-[ 1 ]*/
 @font-face {
   font-family: Roboto-Regular;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
@@ -1004,7 +965,7 @@ a.breadcrumb-item:hover {
 }
 
 .bocl01 {
-  border: 2px solid #ff5300;
+  border: 1px solid #5c10a4;
 }
 
 /*---------------------------------------------*/
@@ -1433,12 +1394,7 @@ a.breadcrumb-item:hover {
 ==================================================================*/
 .bg0 {
   background-color: #fff;
-  margin-top: 8%;
-}
-
-.bg1 {
-  background-color: #fff;
-  margin-top: 4%;
+  margin-top: 6%;
 }
 
 .bg2 {
@@ -1482,10 +1438,9 @@ a.breadcrumb-item:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid #ff5300;
+  border: 1px solid #5c10a4;
 }
 
-/*---------------------------------------------*/
 /*---------------------------------------------*/
 .bg-facebook {
   background-color: #3b5998;
@@ -1925,4 +1880,51 @@ main.homepage .hero .container .gr-ctm-4 .card:nth-child(1) .card .card-img {
 }
 main.homepage .hero .container .gr-ctm-4 .card:nth-child(1) .card-body {
   margin: 0;
+}
+
+.footer {
+  background-color: var(--clr-secondary);
+  display: flex;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--clr-primary);
+}
+.footer .container .logo {
+  width: 10rem;
+}
+.footer .container ul {
+  display: flex;
+  gap: 30px;
+}
+.footer .container .nav-list .list a {
+  font-size: var(--fs-md);
+  color: var(--clr-primary);
+  transition: color 0.5s ease;
+}
+.footer .container .nav-list .list a:hover {
+  color: var(--clr-accent);
+}
+.footer .container span {
+  width: 90%;
+  height: 1px;
+  display: block;
+  background-color: #d7d7d7;
+  opacity: 0.5;
+}
+.footer .container .copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-md);
+  width: 100%;
+}
+.footer .container .copyright .contact-info {
+  display: flex;
+}
+.footer .container .copyright .contact-info p img {
+  width: 1rem;
+  filter: invert(1);
 }/*# sourceMappingURL=style.css.map */

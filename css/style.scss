@@ -1,6 +1,6 @@
 :root {
   --clr-primary: #ffffff;
-  --clr-secondary: #1e0424;
+  --clr-secondary: #5c10a4;
   --clr-accent: #ff5300;
   --clr-accent-2: #9600ff;
   --clr-catg-1: #ff908c;
@@ -44,49 +44,7 @@ ul[role="list"] {
 a {
   text-decoration: none!important;
 }
-/*------------------------------------------------------------------
-Project:  MagNews
-Version:  
-Last change:  
-Assigned to:  Le Xuan Bach
-Primary use:  Company
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
 
-* body
-  + Header / header
-  + Page Content / .page-content .name-page
-        + Section Layouts / section .name-section
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color 01:  
-# Primary Color 02:   
-# Primary Color 03:  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
--------------------------------------------------------------------*/
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-/*------------------------------------------------------------------
-[ 1 ]*/
 @font-face {
   font-family: Roboto-Regular;
   src: url('../fonts/Roboto/Roboto-Regular.ttf'); 
@@ -1165,7 +1123,7 @@ a.breadcrumb-item:hover {
 
 // border Color
 .bocl01{
-  border: 2px solid #ff5300;
+  border: 1px solid #5c10a4;
 }
 
 /*---------------------------------------------*/
@@ -1564,9 +1522,7 @@ a.breadcrumb-item:hover {
    BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND 
 ==================================================================*/
 .bg0 {background-color: #fff; 
-      margin-top: 8%;}
-.bg1 {background-color: #fff; 
-margin-top: 4%;}
+      margin-top: 6%;}
 .bg2 {background-color: #222;}
 .bg3 {background-color: #333;}
 .bg9 {background-color: #999;}
@@ -1583,11 +1539,8 @@ margin-top: 4%;}
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid #ff5300;
-  // border-radius: 1%;
+  border: 1px solid #5c10a4;
 }
-
-/*---------------------------------------------*/
 
 /*---------------------------------------------*/
 .bg-facebook {background-color: #3b5998;}
@@ -1595,14 +1548,6 @@ margin-top: 4%;}
 .bg-youtube {background-color: #ff0000;}
 .bg-google {background-color: #dd4b39;}
 .bg-pinterest {background-color: #bd081c;}
-
-
-
-
-
-/*==================================================================
- HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
-==================================================================*/
 
 /*---------------------------------------------*/
 .how-bor1 {
@@ -1637,15 +1582,10 @@ margin-top: 4%;}
   display: box;
   display:-moz-box;
   display:-webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/*---------------------------------------------*/
-
-/*---------------------------------------------*/
 
 /*---------------------------------------------*/
 .how-overlay1 {
@@ -1749,12 +1689,6 @@ margin-top: 4%;}
   background-color: #9600ff;
 }
 
-
-
-/*==================================================================
-      PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO
-==================================================================*/
-/*//////////////////////////////////////////////////////////////////
 [ Hover ]*/
 
 .hov-cl0:hover {color: #fff;}
@@ -1788,17 +1722,11 @@ margin-top: 4%;}
   color: #ff5300;
 }
 
-
 /*---------------------------------------------*/
 .hov1:hover {
   opacity: 0.8;
 }
 
-
-
-/*==================================================================
-   OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER OTHER 
-==================================================================*/
 /*------------------------------------------------------------------
 [ Input ]*/
 
@@ -1827,12 +1755,6 @@ margin-top: 4%;}
 .wrap-pic-w > img {width: 100%;}
 .wrap-pic-max-w > img {max-width: 100%;}
 
-
-
-
-/*==================================================================
-  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
-==================================================================*/
 
 @media (max-width: 1199px) {
   
@@ -2005,7 +1927,6 @@ main.homepage {
         @media (min-width: 1024px) {
           display: grid;
           grid-template-columns: 1fr 50%;
-        //   grid-template-rows: repeat(3, 10.5rem);
           gap: 1rem;
         }
 
@@ -2032,6 +1953,70 @@ main.homepage {
 
           .card-body {
             margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  background-color: var(--clr-secondary);
+  display: flex;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--clr-primary);
+
+    .logo {
+      width: 10rem;
+    }
+    ul{
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-list {
+      .list {
+        a {
+          font-size: var(--fs-md);
+          color: var(--clr-primary);
+
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: var(--clr-accent);
+          }
+        }
+      }
+    }
+
+    span {
+      width: calc(100% - 10%);
+      height: 1px;
+      display: block;
+      background-color: #d7d7d7;
+      opacity: 0.5;
+
+      @media (min-width: 768px) {
+      }
+    }
+
+    .copyright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: var(--fs-md);
+      width: 100%;
+
+      .contact-info {
+        display: flex;
+        p {
+          img {
+            width: 1rem;
+            filter: invert(1);
           }
         }
       }

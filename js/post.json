@@ -1,0 +1,20 @@
+[
+    {
+        "title": "New Recipe: Spicy Tacos",
+        "date": "2025-11-26",
+        "snippet": "Try this quick and easy recipe for your next dinner party.",
+        "url": "post-new-recipe.html"
+    },
+    {
+        "title": "Understanding CSS Flexbox in 5 Minutes",
+        "date": "2025-11-23",
+        "snippet": "Learn the fundamentals of flexible box layout...",
+        "url": "post-2-flexbox.html"
+    },
+    {
+        "title": "The Best Tips for Beginner Coders",
+        "date": "2025-11-20",
+        "snippet": "A short, engaging summary of the post...",
+        "url": "post-1.html"
+    }
+]
